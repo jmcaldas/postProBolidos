@@ -4,4 +4,4 @@ Video filenames must follow the pattern of videos generated with acquisition app
 Main features:
 *find an astrometric solution for the acquisition system, namely parameters that enable to go from pixel (x,y) to horizontal coordinates (Az,el).
 *perform a photometric calibration based on brightest stars, with minimun user intervention.
-*find trayectory and light curve of meteor based on previous astro- and photometric calibrations, the latter through a novel methodology for meteor brightness estimate.
+*find trajectory and light curve of meteor based on previous astro- and photometric calibrations, the latter through a novel methodology for meteor brightness estimate.
