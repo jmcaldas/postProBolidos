@@ -1,5 +1,4 @@
 # postProBolidos
-v1.0
 Desktop app for astrometric and photometric calibration of meteor videos.
 Video filenames must follow the pattern of videos generated with acquisition app gihutb.com/jmcaldas/bolidosGUI, namely "Station_Id_yyyy-mm-dd-HH-MM-SS_X.avi".
 Main features:
