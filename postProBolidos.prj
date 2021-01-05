@@ -1,0 +1,162 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Procesamiento\Source files\postProBolidos.prj" location="D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Procesamiento\Source files" name="postProBolidos" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>postProBolidos</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>M. Caldas, G. Tancredi</param.authnamewatermark>
+    <param.email>mcaldas@fisica.edu.uy</param.email>
+    <param.company>University of the Republic of Uruguay</param.company>
+    <param.summary>Desktop app for astrometric and photometric calibration of meteor videos.</param.summary>
+    <param.description />
+    <param.screenshot>D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Deteccion\Source files\peque.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\University of the Republic of Uruguay\postProBolidos\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\postProBolidos\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\postProBolidos\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\postProBolidos\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\postProBolidos</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.description />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\app2.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\airMass.m</file>
+      <file>${PROJECT_ROOT}\astrometria.m</file>
+      <file>${PROJECT_ROOT}\astromYfotomBolido.m</file>
+      <file>${PROJECT_ROOT}\caldasTancredi2019.m</file>
+      <file>${PROJECT_ROOT}\caldasTancrediFoto2020.m</file>
+      <file>${PROJECT_ROOT}\centroide.m</file>
+      <file>${PROJECT_ROOT}\dameGaussianaRotada.m</file>
+      <file>${PROJECT_ROOT}\estaciones.txt</file>
+      <file>${PROJECT_ROOT}\evalDetAlg.m</file>
+      <file>${PROJECT_ROOT}\fotometria.m</file>
+      <file>${PROJECT_ROOT}\getDate.m</file>
+      <file>${PROJECT_ROOT}\getmV.m</file>
+      <file>${PROJECT_ROOT}\getStationID.m</file>
+      <file>${PROJECT_ROOT}\hor2ijCaldasTancredi.m</file>
+      <file>${PROJECT_ROOT}\ij2horCaldasTancredi.m</file>
+      <file>${PROJECT_ROOT}\integrarFlujoBolido.m</file>
+      <file>${PROJECT_ROOT}\miGaussianaRotada.m</file>
+      <file>${PROJECT_ROOT}\puntosCardinales.m</file>
+      <file>${PROJECT_ROOT}\RADec2AzEl.m</file>
+      <file>${PROJECT_ROOT}\readStars.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\postProBolidos\for_testing" name="readme.txt" optional="true">D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Procesamiento\Source files\postProBolidos\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\postProBolidos\for_testing" name="splash.png" optional="false">D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Procesamiento\Source files\postProBolidos\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\postProBolidos\for_testing" name="postProBolidos.exe" optional="false">D:\Documentos\01-Proyectos Científicos\Bolidos\Proyecto 2019\Procesamiento\Source files\postProBolidos\for_testing\postProBolidos.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
